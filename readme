@@ -1,2 +1,9 @@
 Java Script Text - String
 Varaiables - Const
+Camel Case - myNameIs
+
+Always Const / Sometimes let / Never Var
+Boolean - true & false
+null - empty
+undefined - have variables but not defined
+Array - const XXX = [1, 2, 3, 6];
