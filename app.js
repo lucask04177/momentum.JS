@@ -4,12 +4,40 @@ const player = {
     fat: true,
 }
 
+player.name = "Kang"
 console.log(player);
-console.log(player.name);
+player.sexy = true
+console.log(player);
 
-player.fat=false;
-console.log(player.fat);
-player.lastname = "kang";
-console.log(player);
-player.points = player.points + 15;
-console.log(player.points);
+function plus(a,b) {
+    console.log(a + b)
+}
+
+plus(35,88);
+
+const calculator = {
+    add: function(a,b) {
+        return (a+b)
+    },
+    minus: function(a,b) {
+        return (a-b)
+    },
+    divide: function(a,b) {
+        return (a/b)
+    },
+    jegob: function(a,b) {
+        return (a**b)
+    },
+};
+
+const plusResult = calculator.add(2,3);
+const minusResult = calculator.minus(plusResult,10);
+const divideResult = calculator.divide(minusResult,10);
+
+const age = 95;
+function calculateKrAge(ageOfForeigner){
+    return ageOfForeigner + 2;
+}
+
+const krAge = calculateKrAge(age);
+console.log(krAge);
