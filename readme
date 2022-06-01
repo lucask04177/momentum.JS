@@ -7,3 +7,6 @@ Boolean - true & false
 null - empty
 undefined - have variables but not defined
 Array - const XXX = [1, 2, 3, 6];
+
+true && ture === true
+true || false === false
