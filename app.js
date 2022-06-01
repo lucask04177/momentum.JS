@@ -1,43 +1,12 @@
-const player = {
-    name:"Lucas",
-    points: 10,
-    fat: true,
+const age = parseInt (prompt("How old Are you?"));
+
+
+if (isNaN(age) || age < 0) {
+    prompt("Please write a real positive Number");
+} else if(age < 18){
+    alert("You are too young");
+} else if(age >= 18 && age <= 50) {
+    alert("your can Drink");
+} else if(age) {
+    alert("You are Too old"); 
 }
-
-player.name = "Kang"
-console.log(player);
-player.sexy = true
-console.log(player);
-
-function plus(a,b) {
-    console.log(a + b)
-}
-
-plus(35,88);
-
-const calculator = {
-    add: function(a,b) {
-        return (a+b)
-    },
-    minus: function(a,b) {
-        return (a-b)
-    },
-    divide: function(a,b) {
-        return (a/b)
-    },
-    jegob: function(a,b) {
-        return (a**b)
-    },
-};
-
-const plusResult = calculator.add(2,3);
-const minusResult = calculator.minus(plusResult,10);
-const divideResult = calculator.divide(minusResult,10);
-
-const age = 95;
-function calculateKrAge(ageOfForeigner){
-    return ageOfForeigner + 2;
-}
-
-const krAge = calculateKrAge(age);
-console.log(krAge);
