@@ -5,3 +5,7 @@ body {
 .show {
     background: black;
 }
+
+.white {
+    color: yellow;
+}
