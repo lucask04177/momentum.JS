@@ -100,11 +100,24 @@
 // console.log(player.name);
 // player.sayHello("lucas");
 
-//Returns
-const age = 96;
-function caculateKrAge(ageOfForeigner){
-    return ageOfForeigner+2;
+// //Returns
+// const age = 96;
+// function caculateKrAge(ageOfForeigner){
+//     return ageOfForeigner+2;
+// }
+
+// const krAge = caculateKrAge(age);
+// console.log (krAge);
+
+// 220822 Condtional
+
+const age = parseInt(prompt("How old are you?"))
+
+if(isNaN(age) || age < 0){
+    prompt("Please write a real Number")
+}else if(age < 18) {
+    prompt("You are too Young")
+}else if(age >= 18 && age <= 50){
+    prompt("You can drink")
 }
 
-const krAge = caculateKrAge(age);
-console.log (krAge);
