@@ -128,50 +128,42 @@
 // // // 220823 The Document Object
 // // Events
 
-const title = document.querySelector(".hello h1")
+// const title = document.querySelector(".hello h1")
 
-function handleTitleClick(){
-    const currentColor = title.style.color;
-    let newColor;
-    if (currentColor === "yellow") {
-        newColor = "blue"
-    }else {
-        newColor = "yellow"
-    }
-    title.style.color = newColor;
-}
+// function handleTitleClick(){
+//     const currentColor = title.style.color;
+//     let newColor;
+//     if (currentColor === "yellow") {
+//         newColor = "blue"
+//     }else {
+//         newColor = "yellow"
+//     }
+//     title.style.color = newColor;
+// }
 
-function handleMouseEnter(){
-    title.innerText = "하앍"
-    title.style.color = "red"
-}
-function handleMouseLeave(){
-    title.innerText = "만져줘"
-    title.style.color = "black"
-}
 
-title.addEventListener("click", handleTitleClick);
-title.addEventListener("mouseenter", handleMouseEnter);
-title.addEventListener("mouseleave", handleMouseLeave);
+// title.addEventListener("click", handleTitleClick);
+// title.addEventListener("mouseenter", handleMouseEnter);
+// title.addEventListener("mouseleave", handleMouseLeave);
 
 
 // 220824 eventListner
 
-const paragraph = document.querySelector(".bye h2")
-const wifi = document.querySelector(".wifi h3")
+// const paragraph = document.querySelector(".bye h2")
+// const wifi = document.querySelector(".wifi h3")
 
 
-function handleMouseClick(){
-    if(paragraph.style.color === "blue") {
-        paragraph.style.color = "tomato";
-    }else {
-        paragraph.style.color = "blue"
-    }
-}
+// function handleMouseClick(){
+//     if(paragraph.style.color === "blue") {
+//         paragraph.style.color = "tomato";
+//     }else {
+//         paragraph.style.color = "blue"
+//     }
+// }
 
-function hadnleWindowResize(){
-    document.body.style.backgroundColor = "tomato";
-}
+// function hadnleWindowResize(){
+//     document.body.style.backgroundColor = "tomato";
+// }
 
 // function hadnleWindowCopy(){
 //     alert("Copier!")
@@ -195,3 +187,46 @@ function hadnleWindowResize(){
 // window.addEventListener("offline", handleWindowOffline);
 // window.addEventListener("online", handleWindowOnline);
 
+//220825 js & css
+
+const h1 = document.querySelector(".jsh1")
+console.log(h1)
+
+function handleH1Click() {
+    if (h1.className === "active") {
+        h1.className = "";
+    } else {
+        h1.className = "active";
+    }
+}
+
+h1.addEventListener("click", handleH1Click);
+
+const h2 = document.querySelector(".jsh2")
+
+function handleH2Click() {
+    if (h2.innerText === "사랑해!") {
+        h2.innerText = "경선아 클릭해줘"
+    } else {
+        h2.innerText = "사랑해!"
+    }
+}
+
+h2.addEventListener("click", handleH2Click)
+
+const h3 = document.querySelector(".jsh3")
+const body = document.querySelector("body")
+function handleH3Click() {
+    body.classList.toggle("night")
+    }
+
+function handleH4Click() {
+    if (h3.innerText === "낮이 되었습니다.") {
+        h3.innerText = "밤이 되었습니다."
+    } else {
+        h3.innerText = "낮이 되었습니다."
+    }
+}
+
+h3.addEventListener("click", handleH3Click)
+h3.addEventListener("click", handleH4Click)

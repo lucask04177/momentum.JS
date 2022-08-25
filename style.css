@@ -2,10 +2,38 @@ body {
     background: white;
 }
 
+
+
 .show {
     background: white;
 }
 
 .white {
     color: yellow;
+}
+
+h1 {
+    color: blue;
+}
+
+.active {
+    color: tomato;
+    transition: color 0.5s ease-in-out;
+}
+
+.night {
+    background: black;
+    color: white;
+    transition: color 0.5s ease-in-out;
+    transition: background 0.5s ease-in-out;
+
+}
+
+.day {
+    transition: color 0.5s ease-in-out;
+    transition: background 0.5s ease-in-out;
+}
+
+.jsh2 {
+    font-family: 'Courier New', Courier, monospace
 }
